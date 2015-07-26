@@ -1,0 +1,470 @@
+/*
+*
+* TMD grid v1.0
+* Copyright 2014 Jarno Uding
+* http://www.mediacompanion.nl
+* Free to use under the MIT Licence
+* http://www.opensource.org/licenses/mit-license.php
+*
+*/
+
+/* Global */ 
+
+img, object, embed {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Desktop -> max-width = 1140px width */
+
+.container {
+	padding-left: 22px;
+	padding-right: 22px;
+	width: 100%;
+}
+
+.row {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+.row .row{ padding-left: 0; padding-right: 0;}
+
+.row .d1, .row .d2, .row .d3, .row .d4, .row .d5, .row .d6, .row .d7, .row .d8, .row .d9,.row .d10, .row .d11, .row .d12 {
+	padding: 0 12px;
+	float: left;
+	min-height: 1px;
+}
+
+.row .d1 {
+	width: 8.3333%;
+}
+
+.row .d2 {
+	width: 16.6666%;
+}
+
+.row .d3 {
+	width: 25%;
+}
+
+.row .d4 {
+	width: 33.3333%;
+}
+
+.row .d5 {
+	width: 41.6666%;
+}
+
+.row .d6 {
+	width: 50%;
+}
+
+.row .d7 {
+	width: 58.3333%;
+}
+
+.row .d8 {
+	width: 66.6666%;
+}
+
+.row .d9 {
+	width: 75%;
+}
+
+.row .d10 {
+	width: 83.3333%;
+}
+
+.row .d11 {
+	width: 91.6666%;
+}
+
+.row .d12 {
+	width: 100%;
+	float: left;
+}
+
+.row .dl {
+	margin-right: 0px;
+}
+
+/* Desktop -> lower than 767px */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+	.row, body, .container {
+		min-width: 0;
+		padding-left: 22px;
+		padding-right: 22px;
+	}
+
+	.row .d1, .row .d2, .row .d3, .row .d4, .row .d5, .row .d6, .row .d7, .row .d8, .row .d9, .row .d10, .row .d11, .row .d12 {
+		width: 100%;
+		float: left;
+	}
+
+}
+
+/* Tablet -> max-width = 767px width */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	.row .t1, .row .t2, .row .t3, .row .t4, .row .t5, .row .t6, .row .t7, .row .t8, .row .t9,.row .t10, .row .t11, .row .t12 {
+		margin-right: 3.8%;
+		margin-left: 0px;
+		float: left;
+		min-height: 1px;
+	}
+
+	.row .t1 {
+		width: 4.85%;
+	}
+
+	.row .t2 {
+		width: 13.45%;
+	}
+
+	.row .t3 {
+		width: 22.05%;
+	}
+
+	.row .t4 {
+		width: 30.75%;
+	}
+
+	.row .t5 {
+		width: 39.45%;
+	}
+
+	.row .t6 {
+		width: 48%;
+	}
+
+	.row .t7 {
+		width: 56.75%;
+	}
+
+	.row .t8 {
+		width: 65.4%;
+	}
+
+	.row .t9 {
+		width: 74.05%;
+	}
+
+	.row .t10 {
+		width: 82.7%;
+	}
+
+	.row .t11 {
+		width: 91.35%;
+	}
+
+	.row .t12 {
+		width: 100%;
+		float: left;
+	}
+
+	.row .tl {
+		margin-right: 0px;
+	}
+
+}
+
+@media handheld, only screen and (max-width: 480px) {
+
+	.row .t1, .row .t2, .row .t3, .row .t4, .row .t5, .row .t6, .row .t7, .row .t8, .row .t9, .row .t10, .row .t11, .row .t12 {
+		width: 100%;
+		float: left;
+	}
+
+}
+
+/* Mobile -> max-width = 480px width */
+
+@media handheld, only screen and (max-width: 480px) {
+
+	.row .m1, .row .m2, .row .m3, .row .m4, .row .m5, .row .m6, .row .m7, .row .m8, .row .m9,.row .m10, .row .m11, .row .m12 {
+		margin-right: 3.8%;
+		float: left;
+		min-height: 1px;
+	}
+
+	.row .m1 {
+		width: 4.85%;
+	}
+
+	.row .m2 {
+		width: 13.45%;
+	}
+
+	.row .m3 {
+		width: 22.05%;
+	}
+
+	.row .m4 {
+		width: 30.75%;
+	}
+
+	.row .m5 {
+		width: 39.45%;
+	}
+
+	.row .m6 {
+		width: 48%;
+	}
+
+	.row .m7 {
+		width: 56.75%;
+	}
+
+	.row .m8 {
+		width: 65.4%;
+	}
+
+	.row .m9 {
+		width: 74.05%;
+	}
+
+	.row .m10 {
+		width: 82.7%;
+	}
+
+	.row .m11 {
+		width: 91.35%;
+	}
+
+	.row .m12 {
+		width: 100%;
+		float: left;
+	}
+
+	.row .ml {
+		margin-right: 0px;
+	}
+
+}
+
+
+/* FULL WIDTH GRID */
+
+/* desktop full width */
+
+.fwrow{
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+.fwrow .d1, .fwrow .d2, .fwrow .d3, .fwrow .d4, .fwrow .d5, .fwrow .d6, .fwrow .d7, .fwrow .d8, .fwrow .d9,.fwrow .d10, .fwrow .d11, .fwrow .d12 {
+	float: left;
+	min-height: 1px;
+}
+
+.fwrow .d1 {
+	width: 8.3333333%;
+}
+
+.fwrow .d2 {
+	width: 16.6666666%;
+}
+
+.fwrow .d3 {
+	width: 25%;
+}
+
+.fwrow .d4 {
+	width: 33.3333333%;
+}
+
+.fwrow .d5 {
+	width: 41.6666666%;
+}
+
+.fwrow .d6 {
+	width: 50%;
+}
+
+.fwrow .d7 {
+	width: 58.3333333%;
+}
+
+.fwrow .d8 {
+	width: 66.6666666%;
+}
+
+.fwrow .d9 {
+	width: 75%;
+}
+
+.fwrow .d10 {
+	width: 83.3333333%;
+}
+
+.fwrow .d11 {
+	width: 91.6666666%;
+}
+
+.fwrow .d12 {
+	width: 100%;
+	float: left;
+}
+
+/* Desktop full width -> lower than 767px */
+
+@media handheld, only screen and (max-width: 960px) {
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+	.fwrow, body, .container {
+		min-width: 0;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.fwrow .d1, .fwrow .d2, .fwrow .d3, .fwrow .d4, .fwrow .d5, .fwrow .d6, .fwrow .d7, .fwrow .d8, .fwrow .d9, .fwrow .d10, .fwrow .d11, .fwrow .d12 {
+		width: 100%;
+		float: left;
+	}
+
+}
+
+/* Tablet full width -> max-width = 767px width */
+
+@media handheld, only screen and (max-width: 960px) {
+
+	.fwrow .t1, .fwrow .t2, .fwrow .t3, .fwrow .t4, .fwrow .t5, .fwrow .t6, .fwrow .t7, .fwrow .t8, .fwrow .t9,.fwrow .t10, .fwrow .t11, .fwrow .t12 {
+		float: left;
+		min-height: 1px;
+	}
+
+	.fwrow .t1 {
+		width: 8.3333333%;
+	}
+
+	.fwrow .t2 {
+		width: 16.6666666%;
+	}
+
+	.fwrow .t3 {
+		width: 25%;
+	}
+
+	.fwrow .t4 {
+		width: 33.3333333%;
+	}
+
+	.fwrow .t5 {
+		width: 41.6666666%;
+	}
+
+	.fwrow .t6 {
+		width: 50%;
+	}
+
+	.fwrow .t7 {
+		width: 58.3333333%;
+	}
+
+	.fwrow .t8 {
+		width: 66.6666666%;
+	}
+
+	.fwrow .t9 {
+		width: 75%;
+	}
+
+	.fwrow .t10 {
+		width: 83.3333333%;
+	}
+
+	.fwrow .t11 {
+		width: 91.6666666%;
+	}
+
+	.fwrow .t12 {
+		width: 100%;
+		float: left;
+	}
+
+
+}
+
+@media handheld, only screen and (max-width: 600px) {
+
+	.fwrow .t1, .fwrow .t2, .fwrow .t3, .fwrow .t4, .fwrow .t5, .fwrow .t6, .fwrow .t7, .fwrow .t8, .fwrow .t9, .fwrow .t10, .fwrow .t11, .fwrow .t12 {
+		width: 100%;
+		float: left;
+	}
+
+}
+
+/* Mobile -> max-width = 480px width */
+
+@media handheld, only screen and (max-width: 600px) {
+
+	.fwrow .m1, .fwrow .m2, .fwrow .m3, .fwrow .m4, .fwrow .m5, .fwrow .m6, .fwrow .m7, .fwrow .m8, .fwrow .m9,.fwrow .m10, .fwrow .m11, .fwrow .m12 {
+		float: left;
+		min-height: 1px;
+	}
+
+	.fwrow .m1 {
+		width: 8.3333333%;
+	}
+
+	.fwrow .m2 {
+		width: 16.6666666%;
+	}
+
+	.fwrow .m3 {
+		width: 25%;
+	}
+
+	.fwrow .m4 {
+		width: 33.3333333%;
+	}
+
+	.fwrow .m5 {
+		width: 41.6666666%;
+	}
+
+	.fwrow .m6 {
+		width: 50%;
+	}
+
+	.fwrow .m7 {
+		width: 58.3333333%;
+	}
+
+	.fwrow .m8 {
+		width: 66.6666666%;
+	}
+
+	.fwrow .m9 {
+		width: 75%;
+	}
+
+	.fwrow .m10 {
+		width: 83.3333333%;
+	}
+
+	.fwrow .m11 {
+		width: 91.6666666%;
+	}
+
+	.fwrow .m12 {
+		width: 100%;
+		float: left;
+	}
+
+}

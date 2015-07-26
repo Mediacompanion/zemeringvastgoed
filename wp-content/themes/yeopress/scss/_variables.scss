@@ -1,0 +1,105 @@
+/* ==========================================================================
+	Variables
+/* ========================================================================== */
+/* Directories */
+$theme_dir: '/wp-content/themes/yeopress/';
+$images_dir: '/wp-content/themes/yeopress/images/';
+
+$orange: #FF9900;
+$blue: #3299BB;
+
+$light-grey: #E9E9E9;
+$medium-grey: #BCBCBC;
+$dark-grey: #424242;
+
+$main-font: 'Raleway', sans-serif;
+
+body {
+	font-family: $main-font;
+	line-height: 26px;
+	color: #444444;
+	background-color: $light-grey;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: $main-font;
+	text-transform: uppercase;
+	color: #444444;
+	letter-spacing: 2px;
+	line-height: 36px
+}
+p {
+	font-family: $main-font;
+	line-height: 26px;
+	color: #444444;
+}
+
+// GENERAL BUTTON STYLING
+
+.btn {
+	border: 1px solid $dark-grey;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: bold;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 8px 22px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	overflow: hidden;
+	min-width: 280px;
+	i {
+		padding-left: 11px;
+	}
+	a {
+		display: block;
+		color: $dark-grey;
+	}
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	background: $orange;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn:hover,
+.btn:active {
+	border: 1px solid transparent;
+	color: #ffffff;
+	a {
+		color: #ffffff;
+	}
+}
+
+.btn:hover:after {
+	height: 480%;
+	opacity: 1;
+}
+
+.btn:active:after {
+	height: 400%;
+	opacity: 1;
+}

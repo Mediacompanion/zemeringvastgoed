@@ -1,0 +1,55 @@
+#diensten-overview {
+	display: inline-block;
+	width: 100%;
+	float: left;
+	background-color: #ffffff;
+	padding: 44px 0 88px 0;
+	#banner {
+		h1 {
+			margin-bottom: 0;
+		}
+		p {
+			font-style: italic;
+			margin-top: 0;
+		}
+	}
+	.content {
+		p {
+			margin-top: 0;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			width: 50%;
+			display: inline-block;
+			float: left;
+			a {
+				color: $blue;
+				text-decoration: none;
+				li {
+					list-style-type: none;
+					padding: 11px;
+					background-color: $light-grey;
+					margin-top: 11px;
+					margin-right: 11px;
+					-webkit-transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;
+					&:hover {
+						background-color: $orange;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+}
+
+#diensten-single {
+	display: inline-block;
+	width: 100%;
+	float: left;
+	background-color: #ffffff;
+	padding: 44px 0 !important;
+}

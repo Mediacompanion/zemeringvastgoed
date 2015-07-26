@@ -1,0 +1,84 @@
+#page-footer {
+	background-color: $dark-grey;
+	width: 100%;
+	display: inline-block;
+	padding: 33px 0;
+	h3 {
+		color: $blue;
+		font-size: 14px;
+		margin-top: 33px;
+	}
+	p {
+		color: $medium-grey;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	button.btn {
+		color: $medium-grey;
+		border: 1px solid $medium-grey;
+		z-index: 2000;
+		&:hover {
+			border: 1px solid transparent;
+			color: #ffffff;
+			& > a {
+				color: #ffffff;
+			}
+		}
+		a {
+			color: $medium-grey;
+			text-decoration: none;
+		}
+	}
+	ul#menu-footer-navigation {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		li {
+			list-style-type: none;
+			line-height: 16px;
+			a {
+				font-size: 12px;
+				color: $medium-grey;
+				text-decoration: none;
+				-webkit-transition: all 0.2s ease-in-out;
+				-moz-transition: all 0.2s ease-in-out;
+				-o-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+				&:hover {
+					padding-left: 4px;
+					color: $orange;
+				}
+			}
+		}
+	}
+	ul.social {
+		margin: 0;
+		padding: 0;
+		li {
+			line-height: 33px;
+			text-align: center;
+			width: 33px; 
+			height: 33px;
+			border: 1px solid $medium-grey;
+			display: inline-block;
+			margin-right: 3px;
+			list-style-type: none;
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			&:hover {
+				background-color: $orange;
+				border: 1px solid $orange;
+
+				& > a {
+					color: #ffffff;
+				}
+			}
+			a {
+				color: $medium-grey;
+				display: block;
+			}
+		}
+	}
+}

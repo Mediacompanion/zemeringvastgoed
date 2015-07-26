@@ -1,0 +1,23 @@
+#about {
+	float: left;
+	width: 100%;
+	display: inline-block;
+	#page-banner {
+		width: 100%;
+		height: 300px;
+		background-color: $light-grey;
+		display: inline-block;
+		float: left;
+	}
+	#content {
+		padding: 44px 0;
+		display: inline-block;
+		float: left; 
+		width: 100%;
+		background-color: #ffffff;
+		h1 {
+			font-size: 22px;
+			margin-top: 0;
+		}
+	}
+}

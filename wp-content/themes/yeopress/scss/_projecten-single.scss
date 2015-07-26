@@ -1,0 +1,46 @@
+#project-single {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+	.slider-container {
+		position: relative;
+	}
+	.slick-next,
+	.slick-prev {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		background-color: #ffffff;
+		top: 50%;
+		margin-top: -22px;
+		z-index: 99;
+		text-align: center;
+		line-height: 44px;
+		opacity: 0.5;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		&:hover {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
+	.slick-next {
+		right: 0;
+	}
+	.slick-prev {
+		left: 0;
+	}
+	.project-single {
+		padding: 44px 0;
+		.slider {
+			.slide {
+				margin: 0px 5px;
+				height: 160px;
+				list-style-type: none;
+			}
+		}
+	}
+}

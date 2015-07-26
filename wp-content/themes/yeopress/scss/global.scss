@@ -1,0 +1,35 @@
+/* ==========================================================================
+	Imports
+/* ========================================================================== */
+
+* {
+	box-sizing: border-box;
+	outline: none !important;
+}
+
+#page-banner {
+	height: 300px;
+	width: 100%;
+	display: inline-block;
+	float: left;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,300);
+
+@import 'normalize'; 
+@import 'variables';
+
+@import 'vendor/slick';
+@import 'vendor/tmdgrid';
+@import 'vendor/fancybox';
+
+@import 'navigation';
+@import 'footer';
+
+@import 'homepage';
+@import 'about';
+@import 'contact';
+
+@import 'projecten-overview';
+@import 'projecten-single';
+@import 'diensten-overview';

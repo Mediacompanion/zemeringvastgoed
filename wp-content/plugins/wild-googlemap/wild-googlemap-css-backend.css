@@ -1,0 +1,256 @@
+/* Message manager */
+#message.ok
+{
+	border:1px solid #06A03A !important;
+	background:#dffde9 !important;
+}
+
+/* Googlemap plugin */
+#wild_googlemap
+{
+}
+
+#wild_theme_forest input.input-text-small
+{
+	width:5em;
+}
+
+#wild_googlemap select
+{
+	width:15em;
+}
+
+#wild_googlemap select[multiple]
+{
+	width:15em;
+	height:200px
+}
+
+#wild_googlemap select.select-small
+{
+	width:5em;
+}
+
+#wild_googlemap #map
+{
+	float:left;
+	min-height:400px;
+	border:1px solid #ccc;
+}
+
+#wild_googlemap .show_more
+{
+	display:none;
+}
+
+	#wild_googlemap .show_more.show_more_button
+	{
+		display:block;
+		cursor:pointer;
+	}
+
+	#wild_googlemap .show_more span
+	{
+		margin:0 2px;
+		padding:1px 4px;
+		font-weight:700;
+		text-align:center;
+		background:#202020;
+		color:#fff;
+		-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;
+	}
+
+#wild_googlemap .screenshot
+{
+	padding:15px;
+	border:1px solid #ccc;
+}
+
+/* Infowindow */
+#wild_googlemap .wgm_infowindow
+#wild_googlemap .wgm_infowindow *
+{
+	margin:0;
+	padding:0;
+	outline:0;
+}
+
+#wild_googlemap .wgm_infowindow
+{
+	color:#666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:1.4em;
+	text-align:center;
+}
+
+/* Infowindow preview */
+#wild_googlemap .wgm_infowindow .preview
+{
+	width:100%;
+}
+
+	#wild_googlemap .wgm_infowindow .preview .title
+	{
+		font-weight:700;
+		margin-bottom:6px;
+	}
+
+	#wild_googlemap .wgm_infowindow .description
+	{
+		margin-bottom:6px;
+	}
+
+	#wild_googlemap .wgm_infowindow .preview .commands
+	{
+		margin-top:10px;
+	}
+
+		#wild_googlemap .wgm_infowindow .preview .commands a
+		{
+			text-decoration:underline !important;
+			color:#0000FF !important;
+			cursor:pointer;
+		}
+
+/* Infowindow edit data */
+#wild_googlemap .wgm_infowindow .data
+{
+	width:310px;
+}
+
+	#wild_googlemap .wgm_infowindow .data p
+	{
+		float:left;
+		clear:left;
+		margin:0;
+		padding:3px 0;
+		font-weight:700;
+	}
+
+	#wild_googlemap .wgm_infowindow .data input[type=text]
+	{
+		float:left;
+		clear:left;
+		width:309px;
+		margin-bottom:6px;
+	}
+
+	#wild_googlemap .wgm_infowindow .data textarea
+	{
+		float:left;
+		clear:left;
+		width:264px;
+		height:80px;
+		margin-bottom:6px;
+	}
+
+	#wild_googlemap .wgm_infowindow .data .icon_preview
+	{
+		float:right;
+		display:block;
+		clear:left;
+		width:34px;
+		height:34px;
+		padding:2px;
+		text-align:center;
+		border:1px solid #dfdfdf;
+		cursor:pointer;
+		overflow:hidden;
+	}
+
+	#wild_googlemap .wgm_infowindow .data .icon_preview img
+	{
+		width:auto;
+		height:auto;
+		max-width:34px;
+		max-height:34px;
+	}
+
+	#wild_googlemap .wgm_infowindow .data input[type=submit]
+	{
+		float:left;
+		clear:left;
+	}
+
+/* Infowindow edit settings */
+#wild_googlemap .wgm_infowindow .settings
+{
+	width:310px;
+}
+
+	#wild_googlemap .wgm_infowindow .settings p
+	{
+		float:left;
+		clear:left;
+		margin:0;
+		padding:3px 0;
+		font-weight:700;
+	}
+
+	#wild_googlemap .wgm_infowindow .settings input[type=text]
+	{
+		float:left;
+		clear:left;
+		width:309px !important;
+		margin-bottom:6px;
+	}
+
+	#wild_googlemap .wgm_infowindow .settings input[type=text][disabled=disabled]
+	{
+		color:#ccc;
+		background:#fcfcfc;
+	}
+
+	#wild_googlemap .wgm_infowindow .settings select
+	{
+		float:left;
+		clear:left;
+		width:309px;
+		margin-bottom:6px;
+	}
+
+	#wild_googlemap .wgm_infowindow .settings input[type=submit]
+	{
+		float:left;
+		clear:left;
+		margin-bottom:1px; /*IE*/
+	}
+
+/* Infowindow icons */
+#wild_googlemap .wgm_infowindow .icons
+{
+	width:100%;
+}
+
+	#wild_googlemap .wgm_infowindow .icons div
+	{
+		float:left;
+		min-width:34px;
+		max-width:68px;
+		height:34px;
+		padding:2px;
+		text-align:center;
+		cursor:pointer;
+	}
+
+	#wild_googlemap .wgm_infowindow .icons div.active
+	{
+		padding:1px;
+		border:1px solid #B53F2F;
+	}
+
+	#wild_googlemap .wgm_infowindow .icons img
+	{
+		width:auto;
+		height:auto;
+		max-width:68px;
+		max-height:34px;
+	}
+
+	#wild_googlemap .wgm_infowindow .icons input[type=submit]
+	{
+		float:right;
+		clear:left;
+		margin-top:6px;
+	}
